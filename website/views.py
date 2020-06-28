@@ -5,6 +5,9 @@ from website.models import Setting, FAQ
 
 
 def home(request):
+    return render(request, 'home.html', {})
+
+def homes(request):
     if request.method == "POST":
         message_name = request.POST['message-name']
         message_email = request.POST['message-email']
