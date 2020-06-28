@@ -1,10 +1,125 @@
-{% extends 'base.html' %}
 {% load static %}
-{% block title %}  {{ setting.title}}  {% endblock %}
-{% block keywords %}   {{ setting.keywords}}  {% endblock %}
+<html lang="en">
 
+<head>
+    <meta name="description" content="{% block description %}   {{ setting.description}}  {% endblock %}">
+    <meta name="keywords" content="{% block keywords %}   {{ setting.keywords}}  {% endblock %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}   {{ setting.title}}  {% endblock %}</title>
+<link rel="icon" type="image/png" sizes="32x32" href="{% static 'website/img/logo/favicon-32x32.png' %}">
+<link rel="icon" type="image/png" sizes="96x96" href="{% static 'website/img/logo/favicon-96x96.png' %}">
+<link rel="icon" type="image/png" sizes="16x16" href="{% static 'website/img/logo/favicon-16x16.png' %}">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
-{% block content %}
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'website/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'website/css/elegant-icons.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'website/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'website/css/barfiller.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'website/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu">
+        <div class="offcanvas__logo">
+            <a href="/home/"><img src="{% static 'website/img/logosss.png' %}" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <ul>
+                <li>CALL US:    +1 813 421 0561</li>
+                <li>WRITE US:   Trecontainerpools@gmail.com</li>
+                <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
+            </ul>
+            <a href="#" class="primary-btn">JOIN US</a>
+        </div>
+        <nav class="header__menu">
+            <ul class="mobile-menu">
+                <li class="active"><a href="/home/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/faq/">FAQ</a></li>
+
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/contact/">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__logo">
+                            <a href="/home/"><img src="{% static 'website/img/logosss.png' %}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="header__top__widget">
+                            <ul>
+                                <b>CALL US:     +1 813 421 0561</b>
+                                <br>
+                                <b>WRITE US:    Trecontainerpools@gmail.com</b>
+                                <br>
+                                <b>OPENING TIMES: MON - FRI: 9:00 - 19:00</b>
+                            </ul>
+                            <a href="{% static 'website/img/guide/guide.pdf' %}" class="primary-btn" download>DOWNLOAD OUR GUIDE!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas__open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9">
+                        <nav class="header__menu">
+                            <ul>
+                               <li class="active"><a href="/home/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/faq/">FAQ</a></li>
+
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
     <section class="hero">
@@ -300,4 +415,114 @@
     <!-- Appoinment Section End -->
 <br>
 <br>
-{% endblock %}
+ <!-- Footer Section Begin -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <img src="{% static 'website/img/logosss.png' %}" alt="">
+                        <ul>
+                            <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:30am - 07:45pm</li>
+                            <li><i class="fa fa-clock-o"></i> Sat - Sun: 8:30am - 05:45pm</li>
+                        </ul>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Your Email">
+                            <button type="submit"><i class="fa fa-send"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Inspiration</h5>
+                        <ul>
+                          <li class="active"><a href="/home/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/faq/">FAQ</a></li>
+
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="/about/">Our Vision</a></li>
+                            <li><a href="/about/">Our Mission</a></li>
+                            <li class="active"><a href="//home/">Home</a></li>
+                            <li><a href="/about/">About</a></li>
+                            <li><a href="/faq/">FAQ</a></li>
+
+                            <li><a href="/pricing">Pricing</a></li>
+                            <li><a href="/contact/">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Contact Us</h5>
+                        <ul class="footer-address">
+                            <li><i class="fa fa-phone"></i> +1 813 421 0561</li>
+                            <li><i class="fa fa-envelope"></i> Trecontainerpools@gmail.com</li>
+                            <li><i class="fa fa-location-arrow"></i> 1560 Duncan Avenue New York, NY 10007</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer__copyright__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+    <!-- Js Plugins -->
+    <script src="{% static 'website/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'website/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'website/js/jquery.barfiller.js' %}"></script>
+    <script src="{% static 'website/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'website/js/main.js' %}"></script>
+
+<script>
+    $( function() {
+        $( "#accordion" ).accordion({
+            collapsible: true
+        });
+
+    } );
+</script>
+
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ef906d74a7c6258179b8036/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<!--End of Tawk.to Script-->
+
+
+</body>
+
+</html>
