@@ -1,0 +1,303 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}  {{ setting.title}}  {% endblock %}
+{% block keywords %}   {{ setting.keywords}}  {% endblock %}
+
+
+{% block content %}
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__sliders owl-carousel">
+             <div class="hero__items set-bg" data-setbg="{% static 'website/img/hero/hero-website9.png' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                <span>Welcome to Trek Container Pools</span>
+                                <h2>Trek Container Pools are easy to install and cost efficient to operate.</h2>
+                                <a href="#" class="primary-btn">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="{% static 'website/img/hero/im.png' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                <span>The Cover
+                                </span>
+                               <h2>An in-demand option, a secure pool cover traps in heat, conserves water, and protects your pool from debris and unwanted access.</h2>
+                                <a href="#" class="primary-btn">DISCOVER MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+{% if message_name %}
+<center>
+    <h2>Thanks {{ message_name }}!</h2>
+    <p>We recieved your email and will respond shortly....</p>
+</center>
+
+{% endif %}
+    <!-- About Section Begin -->
+    <section class="home-about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="home__about__pic">
+                        <div class="home__about__pic__item large-item set-bg" data-setbg="{% static 'website/img/about/abouts-3.png' %}"></div>
+                        <div class="home__about__pic__item">
+                            <div class="home__about__pic__item__inner set-bg" data-setbg="{% static 'website/img/about/abouts-2.png' %}"></div>
+                            <div class="home__about__pic__item__inner set-bg" data-setbg="{% static 'website/img/about/abouts-1.png' %}"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="home__about__text">
+                        <div class="section-title">
+                            <img src="{% static 'website/img/logoss.png' %}" alt="">
+                            <h2>Any Home > Any Site</h2>
+                        </div>
+                        <span>“What hurts today makes you stronger tomorrow.”</span>
+                        <p>Typically in-ground pools can unexpectedly bloat with hidden costs. We are completely transparent with our pricing so you know exactly how much it will cost...</p>
+                        <p class="para-2">Previously pools were limited by the landscape of the home owner’s property. With our patented Shipping Container Pool design now you can land your pool where you once couldn’t..</p>
+                        <a href="#" class="primary-btn">MORE ABOUT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <img src="{% static 'website/img/icon.png' %}" alt="">
+                        <h2>Enjoy All Aspects Of A Container Pool</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="services__list">
+                <div class="row">
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'website/img/services/services-1.png' %}" alt="">
+                            <h5>Sustainable > Repurposed</h5>
+                            <p>We repurpose A-Grade containers that have been used to ship goods to Australia into brand new Shipping Container Pools because we believe an innovative design is a sustainable one.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'website/img/services/services-2.png' %}" alt="">
+                            <h5>Mineral = Special</h5>
+                            <p>There are many benefits of a mineral pool, including healing properties for skin and muscle tissue, stress-relieving properties, it is safe for babies, pregnant women and allergy sufferers</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'website/img/services/services-3.png' %}" alt="">
+                            <h5>Mudra</h5>
+                            <p>Grab the opportunity to deepen your own yoga practice, relax, restore and experience
+                                india!</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'website/img/services/services-4.png' %}" alt="">
+                            <h5>+ HEAT</h5>
+                            <p>Combine the heating system with the Mineral system and you can have your own "hot spring" feel in your back yard.!</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'website/img/services/services-5.png' %}" alt="">
+                            <h5>SMART</h5>
+                            <p>THE FILTRATION SYSTEM LIVES BELOW THE STAIRS AND DECK WITH SOME EXTRA STORAGE SPACE!</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="{% static 'website/img/services/services-6.png' %}" alt="">
+                            <h5>SAFE</h5>
+                            <p>THROUGH THE CHILD-SAFETY DOOR, WIDE WOODEN STAIRS LEAD UP TO A LANDING, ALLOWING EASY ACCESS INTO THE SWIMMING POOL.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Chooseus Section Begin -->
+    <section class="chooseus spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="chooseus__text">
+                        <h2>Why Choose Us</h2>
+                        <p>We are A company that focuses on helping clients achieve their objectives through Continuous Innovation.</p>
+                    </div>
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__icon">
+                            <img src="{% static 'website/img/chooseus/choose-1.png' %}" alt="">
+                        </div>
+                        <div class="chooseus__item__text">
+                            <h2 class="choose-counter"> 546</h2>
+                            <p>Pools built and counting</p>
+                        </div>
+                    </div>
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__icon">
+                            <img src="{% static 'website/img/chooseus/choose-2.png' %}" alt="">
+                        </div>
+                        <div class="chooseus__item__text">
+                            <h2 class="choose-counter">15</h2>
+                            <p>Years Of Experience</p>
+                        </div>
+                    </div>
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__icon">
+                            <img src="{% static 'website/img/chooseus/choose-3.png' %}" alt="">
+                        </div>
+                        <div class="chooseus__item__text">
+                            <h2 class="choose-counter">48</h2>
+                            <p>Branches</p>
+                        </div>
+                    </div>
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__icon">
+                            <img src="{% static 'website/img/chooseus/choose-4.png' %}" alt="">
+                        </div>
+                        <div class="chooseus__item__text">
+                            <h2 class="choose-counter">234</h2>
+                            <p>Expert Staffs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="chooseus__pic">
+                        <img src="{% static 'website/img/chooseus/choose-pics.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<br>
+<br>
+    <!-- Gallery Section Begin -->
+    <section class="gallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title normal-title">
+                        <h2>Our Gallery</h2>
+                        <p>Interested in seeing more of our pools? Check out our Instagram page!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="{% static 'website/img/gallery/gallerys-1.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="{% static 'website/img/gallery/gallerys-2.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="{% static 'website/img/gallery/gallerys-3.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="{% static 'website/img/gallery/gallerys-4.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="{% static 'website/img/gallery/gallerys-5.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="{% static 'website/img/gallery/gallerys-6.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="{% static 'website/img/gallery/gallerys-7.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6 p-0">
+                    <div class="gallery__pic">
+                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section End -->
+<br>
+<br>
+    <!-- Appoinment Section Begin -->
+    <section class="appointment">
+        <div class="container">
+            <div class="appointment__text">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <img src="{% static 'website/img/icon-white.png' %}" alt="">
+                            <h2>Make An Appointment</h2>
+                        </div>
+                    </div>
+                </div>
+                <form action="{% url 'contact' %}" method="post" class="appointment__form">
+                     {% csrf_token %}
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" name="message-name" placeholder="Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" name="message-email" placeholder="Email">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" name="message-phone" placeholder="Phone">
+                        </div>
+                        <div class="col-lg-6">
+                            <select name="message-order" class="class-select">
+                                <option value="">How To Order</option>
+                                <option value="">About Price</option>
+                                <option value="">About Delivery</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Appoinment Section End -->
+<br>
+<br>
+{% endblock %}
