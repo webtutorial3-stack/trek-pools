@@ -5,9 +5,23 @@ from website.models import Setting, FAQ
 
 
 def home(request):
-    setting = Setting.objects.get(pk=1)
-    context = {'setting': setting}
-    return render(request, 'home.html', context)
+    if request.method == "POST":
+        setting = Setting.objects.get(pk=1)
+        message_name = request.POST['message-name']
+        message_email = request.POST['message-email']
+        message = request.POST['message']
+
+        send_mail(
+            message_name,
+            message,
+            message_email,
+            [''],
+        )
+
+        return render(request, 'contact.html', {'message_name': message_name, 'setting': setting})
+
+    else:
+        return render(request, 'home.html', {})
 
 
 def aboutus(request):
