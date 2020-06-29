@@ -26,100 +26,45 @@
       <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}" type="text/css">
 </head>
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+<body data-spy="scroll" data-target=".vesco-top-nav" data-offset="65">
+<header>
+           <nav class="navbar vesco-top-nav  navbar-expand-lg navbar-dark fixed-top pl-5 pr-5">
 
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu">
-        <div class="offcanvas__logo">
-            <a href="/homes/"><img src="{% static 'website/img/logo/logo.png' %}" alt=""></a>
-        </div>
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__widget">
-            <ul>
-                <li>CALL US: {{ setting.phone}}</li>
-                <li>WRITE US:{{ setting.email}}</li>
-                <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
-            </ul>
-            <a href="#" class="primary-btn">JOIN US</a>
-        </div>
-        <nav class="header__menu">
-            <ul class="mobile-menu">
-                <li class="active"><a href="/homes/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/faq/">FAQ</a></li>
 
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
+            <a class="navbar-brand" href="#home">
+                <img src="{% static 'website/img/logo/logos.png' %}" alt="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vesco-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse vesco-nav-wrapper" id="vesco-menu" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pr-2 nav-link smooth-scroll"><a  href="/homes/">Home</a></li>
+                    <li class="nav-item pr-2 nav-link smooth-scroll"><a class="" href="/faq/">FAQ</a></li>
+                    <li class="nav-item pr-2 nav-link smooth-scroll"><a class="" href="/about/">About</a></li>
+                    <li class="nav-item pr-2 nav-link smooth-scroll"><a class="" href="#work">Work</a></li>
+                    <li class="nav-item pr-2 nav-link smooth-scroll"><a class="" href="/pricing/">Pricing</a></li>
+                    <li class="nav-item pr-2 nav-link smooth-scroll"><a class="" href="/contact/">Contact</a></li>
+
+                     <li class="nav-item pr-2 nav-link smooth-scroll"><a class="fa fa-facebook"  href="https://www.facebook.com/salome.dita.96"></a></li>
+                    <li class="nav-item pr-2 nav-link smooth-scroll "><a class="fa fa-twitter"  href="https://www.instagram.com/trekcontainerpools123?r=nametag"></a></li>
+                    <li class="nav-item pr-2 nav-link smooth-scroll"><a class="fa fa-instagram"  href="https://www.instagram.com/trekcontainerpools123?r=nametag"></a></li>
+                    <li class="nav-item pr-2 nav-link smooth-scroll"><a class="fa fa-linkedin"  href="/homes/"></a></li>
+                </ul>
+<!--                <ul>-->
+<!--                 <li class="nav-item pr-2"><a class="nav-link smooth-scroll">CALL US: + 1 800-567-8990</a></li>-->
+<!--                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" >WRITE US: OFFICE@EXAMPLE.COM</a></li>-->
+<!--                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" >OPENING TIMES: MON - FRI: 9:00 - 19:00</a></li>-->
+
+<!--            </ul>-->
+            </div>
+
+
         </nav>
-        <div class="offcanvas__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-        </div>
-    </div>
-    <!-- Offcanvas Menu End -->
 
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3">
-                        <div class="header__logo">
-                            <a href="/homes/"><img src="{% static 'website/img/logo/logo.png' %}" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9">
-                        <div class="header__top__widget">
-                            <ul>
-                                <b>CALL US: {{ setting.phone}} </b>
-                                <br>
-                                <b>WRITE US: {{ setting.email}}</b>
-                                <br>
-                                <b>OPENING TIMES: MON - FRI: 9:00 - 19:00</b>
-                            </ul>
-                            <a href="{% static 'website/img/guide/guide.pdf' %}" class="primary-btn" download>DOWNLOAD OUR GUIDE!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="canvas__open">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </div>
-        </div>
-        <div class="header__nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 col-md-9">
-                        <nav class="header__menu">
-                            <ul>
-                               <li class="active"><a href="/homes/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/faq/">FAQ</a></li>
 
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contact/">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="header__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
     <!-- Header Section End -->
 
@@ -154,14 +99,14 @@
                     <div class="contact__widget__item">
                         <span class="icon_phone"></span>
                         <h4>Phone</h4>
-                        <p>+1 813 421 0561</p>
+                        <p>+12137842257</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="contact__widget__item">
                         <span class="icon_pin_alt"></span>
                         <h4>Address</h4>
-                        <p>1560 Duncan Avenue New York, NY 10007</p>
+                        <p>California</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -194,8 +139,8 @@
             <div class="inside-widget">
                 <h5>New York</h5>
                 <ul>
-                    <li>Phone: +65 11.188.888</li>
-                    <li>Add: 60-49 Road 11378 New York</li>
+                    <li>Phone: +12137842257</li>
+                    <li>California </li>
                 </ul>
             </div>
         </div>
