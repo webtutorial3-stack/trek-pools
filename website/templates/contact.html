@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{% static 'website/css/elegant-icons.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/nice-select.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/barfiller.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}" media="screen" />
     <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/slicknav.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/style.css' %}" type="text/css">
@@ -34,20 +35,20 @@
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu">
         <div class="offcanvas__logo">
-            <a href="/home/"><img src="{% static 'website/img/logosss.png' %}" alt=""></a>
+            <a href="/homes/"><img src="{% static 'website/img/logo/logo.png' %}" alt=""></a>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__widget">
             <ul>
-                <li>CALL US:    +1 813 421 0561</li>
-                <li>WRITE US:   Trecontainerpools@gmail.com</li>
+                <li>CALL US: {{ setting.phone}}</li>
+                <li>WRITE US:{{ setting.email}}</li>
                 <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
             </ul>
             <a href="#" class="primary-btn">JOIN US</a>
         </div>
         <nav class="header__menu">
             <ul class="mobile-menu">
-                <li class="active"><a href="/home/">Home</a></li>
+                <li class="active"><a href="/homes/">Home</a></li>
                 <li><a href="/about/">About</a></li>
                 <li><a href="/faq/">FAQ</a></li>
 
@@ -71,15 +72,15 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
                         <div class="header__logo">
-                            <a href="/home/"><img src="{% static 'website/img/logosss.png' %}" alt=""></a>
+                            <a href="/homes/"><img src="{% static 'website/img/logo/logo.png' %}" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-9">
                         <div class="header__top__widget">
                             <ul>
-                                <b>CALL US:     +1 813 421 0561</b>
+                                <b>CALL US: {{ setting.phone}} </b>
                                 <br>
-                                <b>WRITE US:    Trecontainerpools@gmail.com</b>
+                                <b>WRITE US: {{ setting.email}}</b>
                                 <br>
                                 <b>OPENING TIMES: MON - FRI: 9:00 - 19:00</b>
                             </ul>
@@ -98,7 +99,7 @@
                     <div class="col-lg-9 col-md-9">
                         <nav class="header__menu">
                             <ul>
-                               <li class="active"><a href="/home/">Home</a></li>
+                               <li class="active"><a href="/homes/">Home</a></li>
                 <li><a href="/about/">About</a></li>
                 <li><a href="/faq/">FAQ</a></li>
 
@@ -229,13 +230,13 @@
     </div>
     <!-- Leave Comment End -->
 
- <!-- Footer Section Begin -->
+   <!-- Footer Section Begin -->
     <section class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="footer__about">
-                        <img src="{% static 'website/img/logosss.png' %}" alt="">
+                        <img src="{% static 'website/img/logo/logo.png' %}" alt="">
                         <ul>
                             <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:30am - 07:45pm</li>
                             <li><i class="fa fa-clock-o"></i> Sat - Sun: 8:30am - 05:45pm</li>
@@ -278,9 +279,9 @@
                     <div class="footer__widget">
                         <h5>Contact Us</h5>
                         <ul class="footer-address">
-                            <li><i class="fa fa-phone"></i> +1 813 421 0561</li>
-                            <li><i class="fa fa-envelope"></i> Trecontainerpools@gmail.com</li>
-                            <li><i class="fa fa-location-arrow"></i> 1560 Duncan Avenue New York, NY 10007</li>
+                            <li><i class="fa fa-phone"></i> {{ setting.phone}}</li>
+                            <li><i class="fa fa-envelope"></i> {{ setting.email}}</li>
+                            <li><i class="fa fa-location-arrow"></i> {{ setting.address}}</li>
                         </ul>
                     </div>
                 </div>
@@ -311,6 +312,19 @@
     <script src="{% static 'website/js/owl.carousel.min.js' %}"></script>
     <script src="{% static 'website/js/main.js' %}"></script>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
+ <script>
+       $(document).ready(function() {
+          $('.gallery__pic').magnificPopup({
+             type: 'image',
+             gallery:{enabled:true},
+             removalDelay: 300,       // Delay in milliseconds before popup is removed
+             mainClass: 'mfp-fade'   // Class that is added to popup wrapper and background
+             // other options
+          });
+       });
+    </script>
 <script>
     $( function() {
         $( "#accordion" ).accordion({
@@ -320,6 +334,8 @@
     } );
 </script>
 
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-3b86b8ba-777f-4cb2-95f1-cb162d998390"></div>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -339,4 +355,4 @@ s0.parentNode.insertBefore(s1,s0);
 
 </body>
 
-</html>
+</html></html>

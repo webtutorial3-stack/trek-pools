@@ -1,3 +1,4 @@
+import admin_thumbnails
 from django.contrib import admin
 
 from website.models import Setting, ContactMessage, FAQ
@@ -11,6 +12,11 @@ class ContactMessageAdmin(admin.ModelAdmin):
     list_display = ['name', 'subject', 'update_at', 'status']
     readonly_fields = ('name', 'subject', 'email', 'message', 'ip')
     list_filter = ['status']
+
+
+@admin_thumbnails.thumbnail('image')
+class ImagesAdmin(admin.ModelAdmin):
+    list_display = ['image', 'title', 'image_thumbnail']
 
 
 class FAQAdmin(admin.ModelAdmin):
