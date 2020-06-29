@@ -21,144 +21,123 @@
     <link rel="stylesheet" href="{% static 'website/css/barfiller.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/magnific-popup.css' %}" media="screen" />
     <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}" type="text/css">
+        <link rel="stylesheet" href="{% static 'website/css/animate/animate.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/slicknav.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/style.css' %}" type="text/css">
+      <!-- responsive CSS -->
+    <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}" type="text/css">
 </head>
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+<body data-spy="scroll" data-target=".vesco-top-nav" data-offset="65">
 
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu">
-        <div class="offcanvas__logo">
-            <a href="/homes/"><img src="{% static 'website/img/logo/logo.png' %}" alt=""></a>
-        </div>
+    <header>
 
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__widget">
-            <ul>
-                <li>CALL US:    +1 813 421 0561</li>
-                <li>WRITE US:   Trecontainerpools@gmail.com</li>
-                <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
-            </ul>
-            <a href="{% static 'website/img/guide/guide.pdf' %}" class="primary-btn" download>DOWNLOAD OUR GUIDE!</a>
-        </div>
-        <nav class="header__menu">
-            <ul class="mobile-menu">
-                <li class="active"><a href="/homes/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/faq/">FAQ</a></li>
+       <!-- <nav class="navbar  navbar-fixed-top">
 
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
+            <div class="container-fluid">
+
+                <div class="vesco-nav-wrapper">
+
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vesco-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                       </button>
+
+                        <a class="navbar-brand" href="#home">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="vesco-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a class="smooth-scroll" href="#home">Home</a></li>
+                            <li><a class="smooth-scroll" href="#services">Services</a></li>
+                            <li><a class="smooth-scroll" href="#about">About</a></li>
+                            <li><a class="smooth-scroll" href="#work">Work</a></li>
+                            <li><a class="smooth-scroll" href="#team">Team</a></li>
+                            <li><a class="smooth-scroll" href="#testimonials">Testimonials</a></li>
+                            <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
+                            <li><a class="smooth-scroll" href="#stats">Stats</a></li>
+                            <li><a class="smooth-scroll" href="#clients">Clients</a></li>
+                            <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>-->
+
+        <nav class="navbar vesco-top-nav  navbar-expand-lg navbar-dark fixed-top pl-5 pr-5">
+
+
+            <a class="navbar-brand" href="#home">
+                <img src="{% static 'website/img/logo/logos.png' %}" alt="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vesco-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse vesco-nav-wrapper" id="vesco-menu" >
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="/homes/">Home</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="/faq/">FAQ</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="/about/">About</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#work">Work</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="/pricing/">Pricing</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="/contact/">Contact</a></li>
+                    <br>
+                    <br>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll fa fa-facebook" href=""></a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll fa fa-twitter" href=""></a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll fa fa-instagram" href=""></a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll fa fa-linkedin" href=""></a></li>
+                </ul>
+<!--                <ul>-->
+<!--                 <li class="nav-item pr-2"><a class="nav-link smooth-scroll">CALL US: + 1 800-567-8990</a></li>-->
+<!--                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" >WRITE US: OFFICE@EXAMPLE.COM</a></li>-->
+<!--                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" >OPENING TIMES: MON - FRI: 9:00 - 19:00</a></li>-->
+
+<!--            </ul>-->
+            </div>
+
+
         </nav>
-        <div class="offcanvas__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-        </div>
-    </div>
-    <!-- Offcanvas Menu End -->
 
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3">
-                        <div class="header__logo">
-                            <a href="/homes/"><img src="{% static 'website/img/logo/logo.png' %}" alt=""></a>
-                        </div>
 
-                    </div>
-                    <div class="col-lg-9 col-md-9">
-                        <div class="header__top__widget">
-                            <ul>
-                                <b>CALL US:     +1 813 421 0561</b>
-                                <br>
-                                <b>WRITE US:    Trecontainerpools@gmail.com</b>
-                                <br>
-                                <b>OPENING TIMES: MON - FRI: 9:00 - 19:00</b>
-                            </ul>
-                            <a href="{% static 'website/img/guide/guide.pdf' %}" class="primary-btn" download>DOWNLOAD OUR GUIDE!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="canvas__open">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </div>
-        </div>
-        <div class="header__nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 col-md-9">
-                        <nav class="header__menu">
-                            <ul>
-                               <li class="active"><a href="/homes/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/faq/">FAQ</a></li>
 
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contact/">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="header__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
-    <!-- Header Section End -->
 
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__sliders owl-carousel">
-             <div class="hero__items set-bg" data-setbg="{% static 'website/img/hero/hero-20.png' %}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="hero__text">
-                                <span>Welcome to Trek Container Pools</span>
-                                <h2>Trek Container Pools are easy to install and cost efficient to operate.</h2>
-                                <a href="/pricing/" class="primary-btn">DISCOVER MORE</a>
-                                <a href="{% static 'website/img/guide/guide.pdf' %}" class="primary-btn" download>DOWNLOAD OUR GUIDE!</a>
-                            </div>
-                        </div>
+    <!-- Home -->
+    <section id="home">
+
+        <div id="home-cover" class="bg-parallax animated fadeIn">
+
+            <div id="home-content-box">
+
+                <div id="home-content-box-inner" class="text-center">
+
+                    <div id="home-heading" class="animated zoomIn">
+                        <h3> Trek Container Pools <br> are easy to install and cost efficient to operate.</h3>
                     </div>
-                </div>
-            </div>
-            <div class="hero__items set-bg" data-setbg="{% static 'website/img/new/hero-12.png' %}">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="hero__text">
-                                <span>The Cover
-                                </span>
-                               <h2>An in-demand option,that protects your pool from debris and unwanted access.</h2>
-                                <a href="/pricing/" class="primary-btn">DISCOVER MORE</a>
-                                <a href="{% static 'website/img/guide/guide.pdf' %}" class="primary-btn" download>DOWNLOAD OUR GUIDE!</a>
-                            </div>
-                        </div>
+                    <div id="home-btn" class="animated zoomIn">
+                        <a class="btn btn-lg btn-general btn-white smooth-scroll" href="/pricing/" role="button" title="View Our Work">View Our Work</a>
+                        <a class="primary-btn" href="{% static 'website/img/guide/guide.pdf' %}" role="button" title="View Our Work" download>Download Guide!</a>
                     </div>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
-    <!-- Hero Section End -->
+
 {% if message_name %}
 <center>
     <h2>Thanks {{ message_name }}!</h2>
@@ -182,11 +161,11 @@
                 <div class="col-lg-5">
                     <div class="home__about__text">
                         <div class="section-title">
-                            <img src="{% static 'website/img/logo/logo.png' %}" alt="">
+                            <img src="{% static 'website/img/logo/logo-0.png' %}" alt="">
                             <h2>Any Home > Any Site</h2>
                         </div>
                         <span>“What hurts today makes you stronger tomorrow.”</span>
-                        <p>Typically in-ground pools can unexpectedly bloat with hidden costs. We are completely transparent with our pricing so you know exactly how much it will cost...</p>
+                        <p>Trekcontainer Pools are the only container pool made in the USA by American Welding Society (AWS) certified craftsman. Starting with a single use shipping container, we fabricate custom container pools and ship world wide, to your various destinations. It is our goal to provide you a strong and durable pool that will last for many years. After hand selecting each container, we work with you to design the perfect configuration to suit your location. Then we go to work fabricating the container, prepping and lining the bare sheet metal with industry approved products and finally outfitting your Trek Pool with all the finishing touches.</p>
                         <p class="para-2">Previously pools were limited by the landscape of the home owner’s property. With our patented Shipping Container Pool design now you can land your pool where you once couldn’t..</p>
                         <a href="/about/" class="primary-btn">MORE ABOUT US</a>
                     </div>
@@ -202,7 +181,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <img src="{% static 'website/img/logo/logo.png' %}" alt="">
+                        <img src="{% static 'website/img/logo/logo-0.png' %}" alt="">
                         <h2>Enjoy All Aspects Of A Container Pool</h2>
                     </div>
                 </div>
@@ -318,7 +297,7 @@
 <br>
 <br>
     <!-- Gallery Section Begin -->
-    <section class="gallery">
+    <section class="gallery" id="work">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -421,41 +400,41 @@
 <!--                        <img src="{% static 'website/img/gallery/hero-1.jpeg' %}" alt="18">-->
 <!--                    </a>-->
 <!--                </div>-->
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">
-                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="19">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">
-                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="20">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">
-                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="21">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">
-                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="22">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">
-                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="23">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">
-                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="24">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">
-                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="25">
-                    </a>
-                </div>
+<!--                <div class="col-lg-3 col-md-4 col-6 p-0">-->
+<!--                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">-->
+<!--                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="19">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-4 col-6 p-0">-->
+<!--                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">-->
+<!--                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="20">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-4 col-6 p-0">-->
+<!--                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">-->
+<!--                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="21">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-4 col-6 p-0">-->
+<!--                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">-->
+<!--                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="22">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-4 col-6 p-0">-->
+<!--                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">-->
+<!--                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="23">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-4 col-6 p-0">-->
+<!--                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">-->
+<!--                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="24">-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="col-lg-3 col-md-4 col-6 p-0">-->
+<!--                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">-->
+<!--                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="25">-->
+<!--                    </a>-->
+<!--                </div>-->
 <!--                <div class="col-lg-3 col-md-4 col-6 p-0">-->
 <!--                    <a class="gallery__pic" href="{% static 'website/img/gallery/gallerys-8.png' %}">-->
 <!--                        <img src="{% static 'website/img/gallery/gallerys-8.png' %}" alt="26">-->
@@ -475,7 +454,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <img src="{% static 'website/img/logo/logo.png' %}" alt="">
+                            <img src="{% static 'website/img/logo/logo-0.png' %}" alt="">
                             <h2>Make An Appointment</h2>
                         </div>
                     </div>
@@ -518,7 +497,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
 
                     <div class="footer__about">
-                        <img src="{% static 'website/img/logo/logo.png' %}" alt="">
+                        <img src="{% static 'website/img/logo/logo-0.png' %}" alt="">
                         <ul>
                             <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:30am - 07:45pm</li>
                             <li><i class="fa fa-clock-o"></i> Sat - Sun: 8:30am - 05:45pm</li>
@@ -561,7 +540,7 @@
                     <div class="footer__widget">
                         <h5>Contact Us</h5>
                         <ul class="footer-address">
-                            <li><i class="fa fa-phone"></i> +1 813 421 0561</li>
+                            <li><i class="fa fa-phone"></i> +1 213 784 2257</li>
                             <li><i class="fa fa-envelope"></i> Trecontainerpools@gmail.com</li>
                             <li><i class="fa fa-location-arrow"></i> 1560 Duncan Avenue New York, NY 10007</li>
                         </ul>
@@ -597,7 +576,9 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="{% static 'website/js/jquery.magnific-popup.min.js' %}"></script>
-
+     <!-- WOW JS -->
+    <script src="js/wow/wow.min.js"></script>
+  <script src="{% static 'website/js/easing/jquery.easing.1.3.js' %}"></script>
     <script>
        $(document).ready(function() {
           $('.gallery__pic').magnificPopup({

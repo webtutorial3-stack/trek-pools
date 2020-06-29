@@ -23,103 +23,82 @@
     <link rel="stylesheet" href="{% static 'website/css/owl.carousel.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/slicknav.min.css' %}" type="text/css">
     <link rel="stylesheet" href="{% static 'website/css/style.css' %}" type="text/css">
+      <link rel="stylesheet" href="{% static 'website/css/responsive.css' %}" type="text/css">
 </head>
 
-<body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
 
-    <!-- Offcanvas Menu Begin -->
-    <div class="offcanvas-menu-overlay"></div>
-    <div class="offcanvas-menu">
-        <div class="offcanvas__logo">
-            <a href="/homes/"><img src="{% static 'website/img/logo/logo.png' %}" alt=""></a>
-        </div>
-        <div id="mobile-menu-wrap"></div>
-        <div class="offcanvas__widget">
-            <ul>
-                <li>CALL US: {{ setting.phone}}</li>
-                <li>WRITE US:{{ setting.email}}</li>
-                <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
-            </ul>
-            <a href="#" class="primary-btn">JOIN US</a>
-        </div>
-        <nav class="header__menu">
-            <ul class="mobile-menu">
-                <li class="active"><a href="/homes/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/faq/">FAQ</a></li>
+    <header>
 
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contact/">Contact</a></li>
-            </ul>
+       <!-- <nav class="navbar navbar-fixed-top">
+
+            <div class="container-fluid">
+
+                <div class="vesco-nav-wrapper">
+
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vesco-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                       </button>
+
+                        <a class="navbar-brand" href="#home">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="vesco-menu">
+                        <ul class="nav navbar-nav">
+                            <li><a class="smooth-scroll" href="#home">Home</a></li>
+                            <li><a class="smooth-scroll" href="#services">Services</a></li>
+                            <li><a class="smooth-scroll" href="#about">About</a></li>
+                            <li><a class="smooth-scroll" href="#work">Work</a></li>
+                            <li><a class="smooth-scroll" href="#team">Team</a></li>
+                            <li><a class="smooth-scroll" href="#testimonials">Testimonials</a></li>
+                            <li><a class="smooth-scroll" href="#pricing">Pricing</a></li>
+                            <li><a class="smooth-scroll" href="#stats">Stats</a></li>
+                            <li><a class="smooth-scroll" href="#clients">Clients</a></li>
+                            <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top pl-5 pr-5">
+
+
+            <a class="navbar-brand" href="#home">
+                <img src="img/logo.png" alt="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vesco-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="vesco-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#home">Home</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#services">Services</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#about">About</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#work">Work</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#team">Team</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#pricing">Pricing</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#stats">Stats</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#clients">Clients</a></li>
+                    <li class="nav-item pr-2"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+
         </nav>
-        <div class="offcanvas__social">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-        </div>
-    </div>
-    <!-- Offcanvas Menu End -->
-
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-3">
-                        <div class="header__logo">
-                            <a href="/homes/"><img src="{% static 'website/img/logo/logo.png' %}" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-9 col-md-9">
-                        <div class="header__top__widget">
-                            <ul>
-                                <b>CALL US: {{ setting.phone}} </b>
-                                <br>
-                                <b>WRITE US: {{ setting.email}}</b>
-                                <br>
-                                <b>OPENING TIMES: MON - FRI: 9:00 - 19:00</b>
-                            </ul>
-                            <a href="{% static 'website/img/guide/guide.pdf' %}" class="primary-btn" download>DOWNLOAD OUR GUIDE!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="canvas__open">
-                    <i class="fa fa-bars"></i>
-                </div>
-            </div>
-        </div>
-        <div class="header__nav">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-9 col-md-9">
-                        <nav class="header__menu">
-                            <ul>
-                               <li class="active"><a href="/homes/">Home</a></li>
-                <li><a href="/about/">About</a></li>
-                <li><a href="/faq/">FAQ</a></li>
-
-                <li><a href="/pricing">Pricing</a></li>
-                <li><a href="/contact/">Contact</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col-lg-3 col-md-3">
-                        <div class="header__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+           </header>
     <!-- Header Section End -->
 
 
