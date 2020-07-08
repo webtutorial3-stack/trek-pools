@@ -7,23 +7,27 @@ from website.models import Setting, FAQ
 def home(request):
     return render(request, 'home.html', {})
 
+
 def homes(request):
     if request.method == "POST":
         message_name = request.POST['message-name']
         message_email = request.POST['message-email']
+        message_phone = request.POST['message-phone']
         message = request.POST['message']
 
         send_mail(
             message_name,
             message,
             message_email,
-            [''],
+            message_phone,
+            ['trecontainerpools@gmail.com'],
         )
 
         return render(request, 'home.html', {'message_name': message_name})
 
     else:
         return render(request, 'home.html', {})
+
 
 def aboutus(request):
     setting = Setting.objects.get(pk=1)
@@ -41,7 +45,7 @@ def contact(request):
             message_name,
             message,
             message_email,
-            [''],
+            ['trecontainerpools@gmail.com'],
         )
 
         return render(request, 'contact.html', {'message_name': message_name})

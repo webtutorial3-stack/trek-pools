@@ -128,7 +128,7 @@
                     </div>
                     <div id="home-btn" class="animated zoomIn">
                         <a class="btn btn-lg btn-general btn-white " href="/pricing/" role="button" title="View Our Work">View Our Work</a>
-                        <a class="primary-btn" href="{% static 'website/img/guide/guide.pdf' %}" role="button" title="View Our Work" download>Download Guide!</a>
+                        <a class="primary-btn" href="{% static 'website/img/guide/guideultra.pdf' %}" role="button" title="View Our Work" download>Download Guide!</a>
                     </div>
 
                 </div>
@@ -450,47 +450,47 @@
     <!-- Gallery Section End -->
 <br>
 <br>
-    <!-- Appoinment Section Begin -->
-    <section class="appointment">
-        <div class="container">
-            <div class="appointment__text">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title">
-                            <img src="{% static 'website/img/logo/logo-0.png' %}" alt="">
-                            <h2>Make An Appointment</h2>
-                        </div>
-                    </div>
-                </div>
-                <form action="{% url 'homes' %}" method="post" class="appointment__form">
-                     {% csrf_token %}
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <input type="text" name="message-name" placeholder="Name">
-                        </div>
-                        <div class="col-lg-6">
-                            <input type="text" name="message-email" placeholder="Email">
-                        </div>
-                        <div class="col-lg-6">
-                            <input type="text" name="message-phone" placeholder="Phone">
-                        </div>
-                        <div class="col-lg-6">
-                            <select name="message-order" class="class-select">
-                                <option value="">How To Order</option>
-                                <option value="">About Price</option>
-                                <option value="">About Delivery</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-12 text-center">
-                            <textarea name="message" placeholder="Message"></textarea>
-                            <button type="submit">Submit</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- Appoinment Section End -->
+<!--    &lt;!&ndash; Appoinment Section Begin &ndash;&gt;-->
+<!--    <section class="appointment">-->
+<!--        <div class="container">-->
+<!--            <div class="appointment__text">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-12">-->
+<!--                        <div class="section-title">-->
+<!--                            <img src="{% static 'website/img/logo/logo-0.png' %}" alt="">-->
+<!--                            <h2>Make An Appointment</h2>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <form action="{% url 'homes' %}" method="post" class="appointment__form">-->
+<!--                     {% csrf_token %}-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-lg-6">-->
+<!--                            <input type="text" name="message-name" placeholder="Name">-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-6">-->
+<!--                            <input type="text" name="message-email" placeholder="Email">-->
+<!--                        </div>-->
+<!--                        <div class="col-lg-6">-->
+<!--                            <input type="text" name="message-phone" placeholder="Phone">-->
+<!--                        </div>-->
+<!--&lt;!&ndash;                        <div class="col-lg-6">&ndash;&gt;-->
+<!--&lt;!&ndash;                            <select name="message-order" class="class-select">&ndash;&gt;-->
+<!--&lt;!&ndash;                                <option value="">How To Order</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <option value="">About Price</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <option value="">About Delivery</option>&ndash;&gt;-->
+<!--&lt;!&ndash;                            </select>&ndash;&gt;-->
+<!--&lt;!&ndash;                        </div>&ndash;&gt;-->
+<!--                        <div class="col-lg-12 text-center">-->
+<!--                            <textarea name="message" placeholder="Message"></textarea>-->
+<!--                            <button type="submit">Submit</button>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--    &lt;!&ndash; Appoinment Section End &ndash;&gt;-->
 <br>
 <br>
  <!-- Footer Section Begin -->
@@ -559,7 +559,7 @@
                             <a href="https://www.instagram.com/trekcontainerpools123?r=nametag"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <div class="elfsight-app-3b86b8ba-777f-4cb2-95f1-cb162d998390"></div>
+
                         </div>
                     </div>
                 </div>
@@ -615,9 +615,23 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
-
 <!--End of Tawk.to Script-->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+<!-- GetButton.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+12137842257", // WhatsApp number
+            call_to_action: "Message Us!", // Call to action
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
 
 
 </body>
